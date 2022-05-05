@@ -1134,4 +1134,56 @@ progress::-moz-progress-bar {
     /*############################################*/
 
 }
+
+
+@media only screen and (max-width: 585px){
+    /*################## HEADER ###################*/
+
+    .hero{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*############################################*/
+}
+
+
+@media only screen and (max-width: 465px){
+    /*################## HEADER ###################*/
+
+    .hero{
+        height: 90vh;
+    }
+    /*############################################*/
+
+    .about__name{
+        font-size: 3rem;
+    }
+
+    .button{
+        width: 26vw;
+        height: 50px;
+    }
+    .fa-solid{
+        display: flex;
+        flex-direction: column;
+    }
+    .fa-brands{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 420px){
+    .about__hi{
+        font-size: 5vw;
+    }
+    .about__name{
+        font-size: 11vw;
+    }
+    .about__title{
+        font-size: 5vw;
+    }
+}
 /*------------------------------------------------------------------------------------------*/
