@@ -52,9 +52,9 @@ body::-webkit-scrollbar-thumb:hover{
 .container{
 	width:  90%;
 	margin: 0 auto;
-	overflow: hidden;
 	padding: 80px;
 	max-width: 1200px;
+	overflow: hidden;
 }
 /*#####################################################*/
 
@@ -421,27 +421,27 @@ progress::-moz-progress-bar {
 .sobremi__back{
     width: 100vw;
     height: 100vh;
-    /*background: linear-gradient(to bottom, var(--csecondary) 0 1%, transparent, transparent);*/
+    max-height: 1080px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*background: linear-gradient(to bottom, var(--csecondary) 0 1%, transparent, transparent);*/
 }
 
 .sobremi__container{
     background: linear-gradient(to bottom, #ffffffd9 0 50%, transparent);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     padding: 20px;
-
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;*/
-
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 -20px 20px 0px #00000010;
     z-index: 10;
+
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
 }
 
 .sobremi__title{
@@ -510,12 +510,14 @@ progress::-moz-progress-bar {
 /*##########################################################################*/
 
 .skills{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    max-height: 1080px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .skills__container{
     padding: 30px;
     background-color: #fff;
@@ -523,44 +525,48 @@ progress::-moz-progress-bar {
     box-shadow: 0 0px 20px 0 #0000001c;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 80%;
+    max-height: 500px;
+    z-index: 10;
     /*display: grid;
     grid-template-rows: 20% 80%;*/
-    z-index: 10;
 }
+
 .skills__title1{
-    width: 100%;
+    width: initial;
     margin-top: 0;
-    border-bottom: none;
 }
+
 .skills__title{
     color: var(--csecondary);
-    border-bottom: 4px solid var(--cprimary);
 }
+
 .skills__boxes{
     width: 100%;
-    height: 90%;
+    height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 100px;
 }
+
 .skills__dev{
     text-align: center;
-    /*display: grid;
-    grid-template-rows: 10% 90%;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /*display: grid;
+    grid-template-rows: 10% 90%;*/
 }
+
 .dev__logoscontainer{
-    width: 90%;
-    padding-top: 20px;
+    width: 100%;
+    margin-top: 20px;
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
     column-gap: 15px;
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
 }
 .dev__logoscontainer img{
     border-radius: 15px;
@@ -570,6 +576,7 @@ progress::-moz-progress-bar {
 .dev__logoscontainer img:hover{
     transform: scale(1.1);
 }
+
 .letter__down{
     color: var(--csecondary);
     font-family: "Ubuntu";
@@ -651,22 +658,29 @@ progress::-moz-progress-bar {
 /*#################### BRANDING ########################*/
 .brand{
     height: 100vh;
-    max-height: 1920px;
-    width: 100%;
-    display: grid;
-    margin-top: 9vh;
-    grid-template-rows: 10% 90%;
+    max-height: 1080px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*display: grid;
+    grid-template-rows: 10% 90%;*/
 }
+
 .brand__title{
     margin-top: 0;
     text-align: center;
     width: 100%;
+    margin-top: 3vh;
 }
+
 .brand__container{
     padding: 10px;
     margin-top: 30px;
-    height: 100%;
+    height: 90%;
     width: 100%;
+    max-height: 700px;
     background-color: #3b3b3b1c;
     display: grid;
     grid-template-rows: repeat(17, 1fr);
@@ -675,7 +689,9 @@ progress::-moz-progress-bar {
     column-gap: 10px;
     border-radius: 15px;
 }
+
 .brand__color1{
+    height: 100%;
     background-color: var(--cprimary);
     display: flex;
     justify-content: center;
@@ -683,18 +699,21 @@ progress::-moz-progress-bar {
     border-radius: 15px 0 0 15px;
 }
 .brand__color2{
+    height: 100%;
     background-color: var(--ctertiary);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .brand__color3{
+    height: 100%;
     background-color: var(--cquaternary);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .brand__color4{
+    height: 100%;
     background-color: var(--csecondary);
     display: flex;
     justify-content: center;
@@ -707,6 +726,7 @@ progress::-moz-progress-bar {
     font-family: "ubuntu";
     font-weight: 600;
     transition: transform .2s;
+    font-size: 1vw;
 }
 .brand__colores:hover p{
     transform: scale(1);
@@ -720,6 +740,7 @@ progress::-moz-progress-bar {
     border-radius: 15px 0 0 0;
 }
 .brand__logo img{
+    object-fit: cover;
     height: 80%;
 }
 .brand__logovariation{
@@ -735,14 +756,13 @@ progress::-moz-progress-bar {
 .brand__pattern{
     grid-area: 2/4/10/5;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     border-radius: 0 15px 0 0;
+    overflow: hidden;
 }
 .brand__pattern img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .brand__photography{
     grid-area: 6/3/10/4;
@@ -753,7 +773,9 @@ progress::-moz-progress-bar {
     overflow: hidden;
 }
 .brand__photography img{
-    width: 140%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .brand__mockup{
     grid-area: 10/1/14/3;
@@ -764,7 +786,9 @@ progress::-moz-progress-bar {
     overflow: hidden;
 }
 .brand__mockup img{
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .brand__mockup2{
@@ -777,7 +801,9 @@ progress::-moz-progress-bar {
     border-radius: 0 0 15px 0;
 }
 .brand__mockup2 img{
-    width: 150%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .brand__mockup3{
     grid-area: 14/2/18/3;
@@ -786,9 +812,12 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    object-fit: cover;
 }
 .brand__mockup3 img{
-    height: 140%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .brand__logovariation2{
     grid-area: 14/1/18/2;
@@ -814,6 +843,7 @@ progress::-moz-progress-bar {
 /*################### PROYECTOS ########################*/
 .projects{
     height: 100vh;
+    max-height: 1080px;
     width: 100%;
     max-height: 1920px;
     background-image: url(../assets/patron.svg);
@@ -826,6 +856,18 @@ progress::-moz-progress-bar {
 .projects__container{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.projects__title{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.projects__order{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -838,8 +880,8 @@ progress::-moz-progress-bar {
     background-color: #fff;
     box-shadow: 0 3px 10px 0 #0000002c;
     border-radius: 15px;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
     max-height: 600px;
     display: grid;
     grid-template-rows: 40% 50% 10%;
@@ -848,6 +890,11 @@ progress::-moz-progress-bar {
     text-decoration: none;
     transform: scale(1);
     transition: transform .3s, box-shadow .3s;
+}
+.cardimg__container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .projects__cardcontainer:hover{
     transform: scale(1.1);
@@ -870,9 +917,12 @@ progress::-moz-progress-bar {
     border-bottom: 3px solid #0000001c;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.6rem;
 }
 .projectscard__text p{
     color: var(--csecondary);
+    font-size: .8rem;
 }
 .projectscard__logos{
     text-align: center;
@@ -894,6 +944,7 @@ progress::-moz-progress-bar {
 .design{
     width: 100%;
     height: 100vh;
+    max-height: 1080px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -977,6 +1028,7 @@ progress::-moz-progress-bar {
 @media only screen and (max-width: 1312px) {
 
 }
+
 @media only screen and (max-width: 992px) {
 
     /*################## HEADER ###################*/
@@ -988,9 +1040,13 @@ progress::-moz-progress-bar {
         margin-right: initial;
         margin-top: 50px;
     }
+    .manelli__logohero{
+        width: 30vh;
+    }
 
     /*############################################*/
 }
+
 @media only screen and (max-width: 688px) {
 
     /*################## HEADER ###################*/
@@ -1003,5 +1059,79 @@ progress::-moz-progress-bar {
     }
 
     /*############################################*/
+
+
+    /*################# SOBRE MI #################*/
+
+    .sobremi__container{
+        flex-direction: column;
+    }
+    .sobremi__image{
+        margin-right: initial;
+        margin-bottom: 30px;
+    }
+    .person{
+        width: 40vw;
+        height: 40vw;
+    }
+    .sobremi__title{
+        width: 100%;
+    }
+
+    /*############################################*/
+
+    /*################## SKILLS #################*/
+    .skills__container{
+        max-height: 1920px;
+    }
+
+    .skills__boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .skills__dev{
+        margin-top: 50px;
+    }
+    .skills__design{
+        margin-top: 50px;
+    }
+    /*############################################*/
+
+
+    /*################# PROYECTOS ################*/
+    .projects{
+        height: 120vh;
+    }
+    .projects__container{
+        height: 100%;
+    }
+    .projects__order{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .projects__cardcontainer{
+        width: 100%;
+        height: 95%;
+    }
+    .projectscard__text p{
+        font-size: 1rem;
+    }
+    
+    /*############################################*/
+
+
+    /*################# DISEÑOS #################*/
+    
+    .design__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .designcards{
+        grid-area: initial;
+        overflow: hidden;
+    }
+
+    /*############################################*/
+
 }
 /*------------------------------------------------------------------------------------------*/
