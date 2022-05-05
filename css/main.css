@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb:hover{
 .header{
     background-color: var(--csecondary);
 	height: 100vh;
+    width: 100%;
 	position: relative;
 }
 
@@ -195,14 +196,21 @@ progress::-moz-progress-bar {
     width: 100%;
     height: 90vh;
     max-width: 1200px;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: 60% 40%;
+    /*display:grid;
+    grid-template-columns: 60% 40%;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 /*###############################################################*/
 
 
 /*########################CONTENIDO HEADER#######################*/
+.hero__about{
+    margin-right: 50px;
+}
+
 .about__card{
     position:relative;
     margin:0 auto;
@@ -215,6 +223,7 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: left;
 }
+
 .about__title{
     color: #fff;
     font-size: 1.5rem;
@@ -230,7 +239,7 @@ progress::-moz-progress-bar {
 .about__name{
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 4rem;
+    font-size: 4em;
     text-align: left;
     font-weight: 600;
     transition: 1s;
@@ -631,6 +640,8 @@ progress::-moz-progress-bar {
 /*#################### BRANDING ########################*/
 .brand{
     height: 100vh;
+    max-height: 1920px;
+    width: 100%;
     display: grid;
     margin-top: 9vh;
     grid-template-rows: 10% 90%;
@@ -793,6 +804,7 @@ progress::-moz-progress-bar {
 .projects{
     height: 100vh;
     width: 100%;
+    max-height: 1920px;
     background-image: url(../assets/patron.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -817,6 +829,7 @@ progress::-moz-progress-bar {
     border-radius: 15px;
     width: 80%;
     height: 80%;
+    max-height: 600px;
     display: grid;
     grid-template-rows: 40% 50% 10%;
     overflow: hidden;
@@ -950,147 +963,34 @@ progress::-moz-progress-bar {
 
 
 /*------------------------------------mediaquerys---------------------------------------------*/
-@media screen and (max-width:1366px){
-    .container{
-        max-width: 1000px;
-    }
+@media only screen and (max-width: 1312px) {
+
+}
+@media only screen and (max-width: 992px) {
+
+    /*################## HEADER ###################*/
+
     .hero{
-        max-width: 1000px;
+        flex-direction: column-reverse;
+    }
+    .hero__about{
+        margin-right: initial;
+        margin-top: 50px;
     }
 
-    /*############ ABOUT ############*/
-    .about__hi{
-        font-size: 1.3rem;
-    }
+    /*############################################*/
+}
+@media only screen and (max-width: 688px) {
+
+    /*################## HEADER ###################*/
+    
     .about__name{
         font-size: 3.5rem;
     }
-    .about__title{
-        font-size: 1.3rem;
-    }
-    .manelli__logohero{
-        width: 75%;
-    }
-    /*###############################*/
-
-
-    /*############ SOBREMI ############*/
-    .sobremi__container{
-        width: 100%;
-        max-width: 1000px;
-    }
-    .person{
-        width: 300px;
-        height: 300px;
-    }
-    .sobremi__title{
-        font-size: 2.5rem;
-    }
-    .sobremi__paragraph{
-        font-size: 1rem;
-    }
-    /*###############################*/
-
-
-    /*############ SKILLS ############*/
-    .brand__pattern img{
-        height: initial;
+    .buttons__hero{
         width: 100%;
     }
-    .brand__mockup3 img{
-        height: initial;
-        width: 100%;
-    }
-    /*###############################*/
 
-    
-    /*############ SKILLS ############*/
-    .skills__container{
-        width: 100%;
-        height: 60vh;
-    }
-    .dev__logoscontainer img{
-        width: 75%;
-    }
-    /*################################*/
-
-
-    /*############ DISEÑOS ##############*/
-    .projects__cardcontainer{
-        width: 80%;
-        height: 100%;
-    }
-    .projectscard__text h1{
-        font-size: 1.5rem;
-        margin-top: 10px;
-    }
-    
-    .projectscard__text p{
-        font-size: .8rem;
-    }
-    /*################################*/
-
-
-    .design__container{
-        height: 100%;
-    }
-    .design__title{
-        padding: 10px;
-    }
+    /*############################################*/
 }
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:952px){
-    .nav__container{
-        position:fixed;
-    }
-    .nav__logo{
-        font-size: 30px;
-        padding-left: 35px;
-    }
-    .nav__li{
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:858px){
-    .nav{
-        height: 65px;
-    }
-    .nav__container{
-        position:fixed;
-    }
-    .nav__menu{
-        display: inline-flex;
-    }
-    .nav__ul{
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 65px);
-        background-color: var(--ctertiary);
-        top: -100vh;
-        text-align: center;
-        transition: .5s;
-        flex-direction: column;
-    }
-    .nav__li{
-        margin: 30px 0 0 0;
-        line-height: 30px;
-        font-size: 20px;
-        font-weight: 800;
-    }
-    .nav__logo{
-        font-size: 25px;
-        padding-left: 35px;
-    }
-}
-
 /*------------------------------------------------------------------------------------------*/
