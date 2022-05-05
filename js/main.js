@@ -2,9 +2,31 @@ addEventListener("DOMContentLoaded", () => {
   const nav__menu = document.querySelector(".nav__menu");
   nav__menu.addEventListener("click", () => {
     const nav__ul = document.querySelector(".nav__ul");
-    nav__ul.classList.toggle("show");
+      nav__ul.classList.toggle("show");
+
+      
+    function disableScroll() {
+      // Get the current page scroll position
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+          // if any scroll is attempted, set this to the previous value
+          window.onscroll = function() {
+              window.scrollTo(scrollLeft, scrollTop);
+          };
+    }
+
+    function enableScroll() {
+      window.onscroll = function() {};
+    }
+
+    if (nav__ul.classList.includes("show")){
+      disableScroll();
+    }
+    
   });
 });
+
 
 gsap.to("#prueba1", {
   value: 100,
@@ -56,6 +78,9 @@ window.addEventListener("scroll", (event) => {
   let nav__list4 = document.getElementById("nav__li4");
   let nav__list5 = document.getElementById("nav__li5");
   let nav__list6 = document.getElementById("nav__li6");
+  let nav__ul = document.getElementById("nav__ul1");
+  let nav__sandwich = document.getElementById("nav__menu1");
+  
   console.log(scrollY);
 
   if (scrollY < 150) {
@@ -65,6 +90,8 @@ window.addEventListener("scroll", (event) => {
   }
 
   if (scrollY > 700) {
+    nav__sandwich.classList = "fa fa-bars black"
+    nav__ul.classList = "nav__ul white"
     manelli1.classList = "logonavfill active";
     manelli2.classList = "logonavfill active";
     manelli3.classList = "logonavfill active";
@@ -77,6 +104,8 @@ window.addEventListener("scroll", (event) => {
     nav__list6.classList = "nav__li2";
   }
   if (scrollY < 700) {
+    nav__sandwich.classList = "fa fa-bars white"
+    nav__ul.classList = "nav__ul black"
     manelli1.classList = "logonavfill";
     manelli2.classList = "logonavfill";
     manelli3.classList = "logonavfill";

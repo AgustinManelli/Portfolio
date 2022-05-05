@@ -12,6 +12,7 @@ body{
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
     /*cursor: url(../assets/dot.png), auto;*/
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -154,8 +155,28 @@ body::-webkit-scrollbar-thumb:hover{
     transform: scale(1);
 }
 
-.nav__ul.show{
-    top:65px;
+.show.black{
+    top:0px;
+    z-index: -1;
+}
+
+.show.white{
+    top:0px;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.fa-bars{
+    transition: color 1s;
+}
+
+.fa-bars.black{
+    
+    color:var(--csecondary)
+} 
+.fa-bars.white{
+    
+    color:#fff;
 }
 
 .nav__menu{
@@ -165,6 +186,7 @@ body::-webkit-scrollbar-thumb:hover{
     cursor: pointer;
     display: none;
 }
+
 
 progress{
     top: 0;
@@ -193,7 +215,7 @@ progress::-moz-progress-bar {
 }
 
 .hero{
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     max-width: 1200px;
     /*display:grid;
@@ -414,6 +436,7 @@ progress::-moz-progress-bar {
 .line__path{
     position: absolute;
     z-index: -1;
+    width: 100vw;
 }
 
 /*############################ABOUT#############################################*/   
@@ -844,7 +867,7 @@ progress::-moz-progress-bar {
 .projects{
     height: 100vh;
     max-height: 1080px;
-    width: 100%;
+    width: 100vw;
     max-height: 1920px;
     background-image: url(../assets/patron.svg);
     background-position: center;
@@ -942,7 +965,7 @@ progress::-moz-progress-bar {
 /*######################################################*/
 
 .design{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     max-height: 1080px;
     display: flex;
@@ -1006,14 +1029,17 @@ progress::-moz-progress-bar {
 
 
 
-
+.footer{
+    width: 100vw;
+}
 .footer__transition{
     position: relative;
     margin-bottom: -10px;
+    width: 100vw;
 }
 .footer__container{
     background-color: var(--csecondary);
-    width: 100%;
+    width: 100vw;
     height: 300px;
 }
   
@@ -1030,6 +1056,40 @@ progress::-moz-progress-bar {
 }
 
 @media only screen and (max-width: 992px) {
+
+    /*#################### NAV ####################*/
+    .nav__menu{
+        display: initial;
+        display: inline-flex ;
+    }
+    .nav__ul{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(39, 38, 38, 1);
+        top: -100vh;
+        text-align: center;
+        transition: .5s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+        margin-right: 0;
+        padding: 0;
+        
+    }
+    .nav__li{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .nav__li2{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .nav__separator{
+        display: none;
+    }
+    /*############################################*/
 
     /*################## HEADER ###################*/
 
