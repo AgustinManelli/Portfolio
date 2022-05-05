@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 /*###################CONTENEDORES#####################*/
 .container{
-	width:  91%;
+	width:  90%;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 80px;
