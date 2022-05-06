@@ -521,13 +521,14 @@ progress::-moz-progress-bar {
 
 .person img{
     object-fit: cover;
-    width: 100%;
-    transform: scale(1.4) translateY(40px);
+    width: 27vw;
+    transform: scale(1.4) translateY(3vw) translateX(-1vw);
     filter: grayscale();
     transition: transform 1s, filter 1s;
+    display: flex;
 }
 .sobremi__image:hover img{
-    transform: scale(1.6) translateY(40px);
+    transform: scale(1.6) translateY(3vw) translateX(-1vw);
     filter: none;
 }
 /*##########################################################################*/
@@ -1123,6 +1124,9 @@ progress::-moz-progress-bar {
 
     /*################# SOBRE MI #################*/
 
+    .sobremi__back{
+        margin-top: 70px;
+    }
     .sobremi__container{
         flex-direction: column;
     }
@@ -1133,6 +1137,9 @@ progress::-moz-progress-bar {
     .person{
         width: 40vw;
         height: 40vw;
+    }
+    .person img{
+        width: 40vw;
     }
     .sobremi__title{
         width: 100%;

@@ -3,26 +3,6 @@ addEventListener("DOMContentLoaded", () => {
   nav__menu.addEventListener("click", () => {
     const nav__ul = document.querySelector(".nav__ul");
       nav__ul.classList.toggle("show");
-
-      
-    function disableScroll() {
-      // Get the current page scroll position
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-          // if any scroll is attempted, set this to the previous value
-          window.onscroll = function() {
-              window.scrollTo(scrollLeft, scrollTop);
-          };
-    }
-
-    function enableScroll() {
-      window.onscroll = function() {};
-    }
-
-    if (nav__ul.classList.includes("show")){
-      disableScroll();
-    }
     
   });
 });
@@ -123,6 +103,8 @@ window.onload = function () {
   let smoothclear = document.getElementById("smoothclear1");
   let svg__dot = document.getElementById("svg__dot1");
   let svg__logohero = document.getElementById("manelli__logoo1");
+  let nav__ul = document.getElementById("nav__ul1");
+  let nav__sandwich = document.getElementById("nav__menu1");
   smoothclear.className = "smoothclear active";
   setTimeout(() => {
     svg__logohero.classList = "manelli__logohero active";
@@ -148,6 +130,8 @@ window.onload = function () {
   }
 
   if (scrollY > 700) {
+    nav__sandwich.classList = "fa fa-bars black"
+    nav__ul.classList = "nav__ul white"
     manelli1.classList = "logonavfill active";
     manelli2.classList = "logonavfill active";
     manelli3.classList = "logonavfill active";
@@ -160,6 +144,8 @@ window.onload = function () {
     nav__list6.classList = "nav__li2";
   }
   if (scrollY < 700) {
+    nav__sandwich.classList = "fa fa-bars white"
+    nav__ul.classList = "nav__ul black"
     manelli1.classList = "logonavfill";
     manelli2.classList = "logonavfill";
     manelli3.classList = "logonavfill";
