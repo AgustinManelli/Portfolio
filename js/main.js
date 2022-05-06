@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 const typedTextSpan2 = document.querySelector(".about__effect");
 const cursorSpan2 = document.querySelector(".cursor2");
 
-const textArray2 = ["Web.", "UX-UI.", "Gráfico.", "Corporativo."];
+const textArray2 = ["web", "UX-UI", "graphic", "corporate"];
 const typingDelay2 = 100;
 const erasingDelay2 = 50;
 const newTextDelay2 = 2000; // Delay between current and next text
