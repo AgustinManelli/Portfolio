@@ -58,13 +58,13 @@ body::-webkit-scrollbar-thumb:hover{
 	overflow: hidden;
 }
 /*#####################################################*/
-
 .burger{
     margin-right: 30px;
     height:80px;
     width:80px;
     border-radius:8px;
-    display:flex;
+    cursor: pointer;
+    display: none; 
     justify-content:center;
     align-items:center;
     flex-direction:column;
@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
   
 .burger div{
+    display: none;
     background-color:white;
     height:6px;
     width: 48px;
@@ -222,11 +223,6 @@ body::-webkit-scrollbar-thumb:hover{
     color: #fff;
     cursor: pointer;
     display: none;
-}
-
-.burger{
-    cursor: pointer;
-    display: none; 
 }
 
 
@@ -1138,6 +1134,12 @@ progress::-moz-progress-bar {
         margin-right: 0;
         padding: 0;
         
+    }
+    .burger{
+        display: flex; 
+    }
+    .burger div{
+        display: initial;
     }
     .nav__li{
         margin-bottom: 30px;
