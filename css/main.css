@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb:hover{
 /*#####################################################*/
 .burger{
     margin-right: 30px;
+    margin-top: 10px;
     height:80px;
     width:80px;
     border-radius:8px;
@@ -73,17 +74,26 @@ body::-webkit-scrollbar-thumb:hover{
   
 .burger div{
     display: none;
-    background-color:white;
-    height:6px;
-    width: 48px;
+    height:5px;
+    width: 44px;
     border-radius:3px;
     transition: 0.5s;
 }
+.burger__bread{
+    background-color: #fff;
+}
 
-.buractive div{
+.burger__mid{
+    background-color: var(--cprimary);
+}
+
+.buractive div:nth-child(1){
     background-color: var(--csecondary);
 }
-  
+.buractive div:nth-child(3){
+    background-color: var(--csecondary);
+}
+
 .active div:nth-child(1){
     transform: translateY(12px) rotate(135deg);
 }
