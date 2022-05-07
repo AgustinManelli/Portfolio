@@ -332,7 +332,7 @@ progress::-moz-progress-bar {
 
     display: inline-block;
     -webkit-animation: hihand 10s infinite;
-    animation: hihand .5s infinite;
+    animation: hihand .3s ease-in-out infinite;
 
 }
 
@@ -625,6 +625,30 @@ progress::-moz-progress-bar {
 .person:hover img{
     transform: scale(1.6) translateY(3vw) translateX(-1vw);
     filter: none;
+}
+
+.sobremi__hands{
+    display: inline-block;
+    font-size: 2em;
+}
+.sobremi__container:hover .sobremi__hands{
+animation: sobremihand .3s ease-in-out infinite;
+}
+
+@keyframes sobremihand {
+    0% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+    50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    100% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
 }
 /*##########################################################################*/
 
@@ -1145,4 +1169,34 @@ progress::-moz-progress-bar {
     background-color: var(--csecondary);
     width: 100vw;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__declaration{
+    color: #fff;
+    font-weight: 300;
+}
+.footer__heart{
+    color: #FF4779;
+    animation: heart 1s ease-in-out infinite;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes heart{
+    0% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    50% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
 }
