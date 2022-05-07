@@ -1,0 +1,286 @@
+@media only screen and (max-width: 1312px) {
+    .letter__down{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .letter__down{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    /*#################### NAV ####################*/
+    .nav__menu{
+        display: initial;
+        display: inline-flex ;
+    }
+    .nav__ul{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(39, 38, 38, 1);
+        left: -100vw;
+        top: 0;
+        text-align: center;
+        transition: .5s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+        margin-right: 0;
+        padding: 0;
+        
+    }
+    .burger{
+        display: flex; 
+    }
+    .burger div{
+        display: initial;
+    }
+    .nav__li{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .nav__li2{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .nav__separator{
+        display: none;
+    }
+    /*############################################*/
+
+    /*################## HEADER ###################*/
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero__about{
+        margin-right: initial;
+        margin-top: 50px;
+    }
+    .manelli__logohero{
+        width: 30vh;
+    }
+
+    /*############################################*/
+
+
+    /*################## SKILLS #################*/
+    .skills{
+        height: 200vh;
+    }
+    .skills__container{
+        max-height: 1920px;
+    }
+
+    .skills__boxes{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .skills__dev{
+        margin-top: 50px;
+        margin-right: 0;
+    }
+    .skills__design{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .letter__down{
+        font-size: 1.2rem;
+    }
+    /*############################################*/
+}
+
+@media only screen and (max-width: 688px) {
+
+    /*################## HEADER ###################*/
+    
+    .about__name{
+        font-size: 3.5rem;
+    }
+    .buttons__hero{
+        width: 100%;
+    }
+
+    /*############################################*/
+
+
+    /*################# SOBRE MI #################*/
+
+    .sobremi__back{
+        margin-top: 70px;
+    }
+    .sobremi__container{
+        flex-direction: column;
+    }
+    .sobremi__image{
+        margin-right: initial;
+        margin-bottom: 30px;
+    }
+    .person{
+        width: 40vw;
+        height: 40vw;
+    }
+    .person img{
+        width: 40vw;
+    }
+    .sobremi__title{
+        width: 100%;
+    }
+
+    /*############################################*/
+
+    /*################## SKILLS #################*/
+    .letter__down{
+        font-size: 1rem;
+    }
+    /*############################################*/
+
+
+    /*################# PROYECTOS ################*/
+    .projects{
+        height: 200vh;
+    }
+    .projects__container{
+        height: 100%;
+    }
+    .projects__order{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .projects__cardcontainer{
+        width: 100%;
+        height: 95%;
+    }
+    .projectscard__text p{
+        font-size: 1rem;
+    }
+    
+    /*############################################*/
+
+
+    /*################# DISEÑOS #################*/
+    .design__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .designcards{
+        grid-area: initial;
+        overflow: hidden;
+    }
+
+    /*############################################*/
+
+}
+
+
+@media only screen and (max-width: 620px){
+    .letter__down{
+        font-size: .9rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 585px){
+    /*################## HEADER ###################*/
+
+    .hero{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*############################################*/
+
+    /*################## SKILLS ###################*/
+
+    .sobremi__title{
+        font-size: 2rem;
+    }
+
+    .dev__logoscontainer{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .skills__boxes{
+        margin-top: 100px;
+    }
+    .letter__down{
+        font-size: 1rem;
+    }
+
+    /*############################################*/
+}
+
+
+@media only screen and (max-width: 465px){
+    /*################## HEADER ###################*/
+
+    .hero{
+        height: 90vh;
+    }
+    /*############################################*/
+
+    .about__name{
+        font-size: 3rem;
+    }
+
+    .button{
+        width: 26vw;
+        height: 50px;
+    }
+    .fa-solid{
+        display: flex;
+        flex-direction: column;
+    }
+    .fa-brands{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*################## SKILLS ###################*/
+    .letter__down{
+        font-size: 0.75rem;
+    }
+
+    /*############################################*/
+}
+
+
+@media only screen and (max-width: 420px){
+    .about__hi{
+        font-size: 5vw;
+    }
+    .about__name{
+        font-size: 11vw;
+    }
+    .about__title{
+        font-size: 5vw;
+    }
+    /*################## SKILLS ###################*/
+    .skills{
+        max-height: 1800px;
+        height: 1800px;
+    }
+    .dev__logoscontainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .skills__logocontainer{
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .letter__down{
+        font-size: 1.5rem;
+    }
+    /*############################################*/
+}
+
+@media only screen and (max-width: 380px){
+    .sobremi__title{
+        font-size: 1.5rem;
+    }
+}
