@@ -224,6 +224,11 @@ body::-webkit-scrollbar-thumb:hover{
     display: none;
 }
 
+.burger{
+    cursor: pointer;
+    display: none; 
+}
+
 
 progress{
     top: 0;
