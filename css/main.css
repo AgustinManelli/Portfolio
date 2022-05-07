@@ -277,6 +277,20 @@ progress::-moz-progress-bar {
 
 
 /*########################CONTENIDO HEADER#######################*/
+.tags{
+    position: absolute;
+    top: -50px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255,255,255,0.03);
+    font-size: 2rem; font-weight: 300;
+    text-align: left;
+    user-select: none;   
+}
+.tags.down{
+    top: initial;
+    bottom: -50px;
+}
+
 .hero__about{
     margin-right: 50px;
 }
@@ -308,6 +322,36 @@ progress::-moz-progress-bar {
     font-weight: 300;
     text-align: left;
 }
+.about__hihand{
+
+    display: inline-block;
+
+}
+
+.about__card:hover .about__hihand{
+
+    display: inline-block;
+    -webkit-animation: hihand 10s infinite;
+    animation: hihand .5s infinite;
+
+}
+
+@keyframes hihand {
+    0% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+    50% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+}
+
 .about__name{
     padding-top: 5px;
     padding-bottom: 10px;

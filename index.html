@@ -104,7 +104,8 @@
 		<section class="hero container" id="Home">
 			<div class="hero__about">
 				<div class="about__card">
-					<h2 class="about__hi">Hi👋, my name is</h2>
+					<span class="tags up">&#60 section &#62</span>
+					<h2 class="about__hi">Hi <span class="about__hihand">👋</span>, my name is</h2>
 					<h2 class="about__name">Agustín Manelli</h2>
 					<p class="about__title">I dedicate myself to <span class="about__effect" style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"></span><span style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"> design.</span><span class="cursor2">&nbsp</span></p>
 					<div class="buttons__hero">
@@ -112,6 +113,7 @@
 						<a href="https://www.linkedin.com/in/agustinmanelli/" target="_blank"><button class="button linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
 						<a><button class="button github"><i class="fa-brands fa-github"></i> Github</button></a>
 					</div>
+					<span class="tags down">&#60 section &#62</span>
 				</div>
 			</div>
 
@@ -179,7 +181,7 @@
 				</div>
 
 				<div class="sobremi__text">
-					<h1 class="sobremi__title">ABOUT ME</h1>
+					<h1 class="sobremi__title">About Me</h1>
 					<h3 class="sobremi__paragraph">In the last months I got specialized in programming languages, 			​​like <b>HTML CSS</b> and <b>JS</b>. <br>Together with my knowledge in graphic design, I 	manage to develop in the most competent way in agile development teams.
 
 						<br><br>I study Computer Engineering, my goal is to be mainly a developer and web designer, also continue training in other programming language along my university studies.🎓<br><br>
@@ -197,7 +199,7 @@
 
 		<section class="skills" id="Skills">
 			<div class="skills__container container">
-				<h1 class="sobremi__title skills__title1">MY SKILLS</h1>
+				<h1 class="sobremi__title skills__title1">My Skills</h1>
 				<div class="skills__boxes">
 					<div class="skills__dev">
 						<h2 class="skills__title">Programming</h2>
@@ -237,7 +239,7 @@
 		</div>
 
 		<section class="brand container" id="Brand">
-			<h1 class="sobremi__title brand__title"> BRANDING </h1>
+			<h1 class="sobremi__title brand__title"> Branding </h1>
 			<div class="brand__container" id="brand">
 				<div class="brand__color1 brand__colores"><p>#FF00F2</p></div>
 				<div class="brand__color2 brand__colores"><p>#FF4779</p></div>
@@ -258,7 +260,7 @@
 
 		<section class="projects" id="Projects">
 			<div class="projects__container container" id="skills">
-				<h1 class="sobremi__title projects__title" >PROJECTS</h1>
+				<h1 class="sobremi__title projects__title" >Projects</h1>
 				<div class="projects__order" >
 					<div class="projects__card">
 						<a class="projects__cardcontainer" href="https://www.agnriotercero.site/" target="__blank">
@@ -322,7 +324,9 @@
 
 
 <script>
-	AOS.init();
+	AOS.init({
+		once: true
+	});
 </script>
 <script>
   $(document).ready(function(){
