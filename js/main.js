@@ -1,13 +1,3 @@
-addEventListener("DOMContentLoaded", () => {
-  const nav__menu = document.querySelector(".nav__menu");
-  nav__menu.addEventListener("click", () => {
-    const nav__ul = document.querySelector(".nav__ul");
-      nav__ul.classList.toggle("show");
-    
-  });
-});
-
-
 gsap.to("#prueba1", {
   value: 100,
   ease: "none",
@@ -59,7 +49,7 @@ window.addEventListener("scroll", (event) => {
   let nav__list5 = document.getElementById("nav__li5");
   let nav__list6 = document.getElementById("nav__li6");
   let nav__ul = document.getElementById("nav__ul1");
-  let nav__sandwich = document.getElementById("nav__menu1");
+  let nav__sandwich = document.getElementById("buractive");
   
   console.log(scrollY);
 
@@ -70,7 +60,7 @@ window.addEventListener("scroll", (event) => {
   }
 
   if (scrollY > 700) {
-    nav__sandwich.classList = "fa fa-bars black"
+    nav__sandwich.classList = "burger buractive"
     nav__ul.classList = "nav__ul white"
     manelli1.classList = "logonavfill active";
     manelli2.classList = "logonavfill active";
@@ -84,7 +74,7 @@ window.addEventListener("scroll", (event) => {
     nav__list6.classList = "nav__li2";
   }
   if (scrollY < 700) {
-    nav__sandwich.classList = "fa fa-bars white"
+    nav__sandwich.classList = "burger"
     nav__ul.classList = "nav__ul black"
     manelli1.classList = "logonavfill";
     manelli2.classList = "logonavfill";
@@ -104,7 +94,7 @@ window.onload = function () {
   let svg__dot = document.getElementById("svg__dot1");
   let svg__logohero = document.getElementById("manelli__logoo1");
   let nav__ul = document.getElementById("nav__ul1");
-  let nav__sandwich = document.getElementById("nav__menu1");
+  let nav__sandwich = document.getElementById("buractive");
   smoothclear.className = "smoothclear active";
   setTimeout(() => {
     svg__logohero.classList = "manelli__logohero active";
@@ -130,7 +120,7 @@ window.onload = function () {
   }
 
   if (scrollY > 700) {
-    nav__sandwich.classList = "fa fa-bars black"
+    nav__sandwich.classList = "burger buractive"
     nav__ul.classList = "nav__ul white"
     manelli1.classList = "logonavfill active";
     manelli2.classList = "logonavfill active";
@@ -144,7 +134,7 @@ window.onload = function () {
     nav__list6.classList = "nav__li2";
   }
   if (scrollY < 700) {
-    nav__sandwich.classList = "fa fa-bars white"
+    nav__sandwich.classList = "burger"
     nav__ul.classList = "nav__ul black"
     manelli1.classList = "logonavfill";
     manelli2.classList = "logonavfill";

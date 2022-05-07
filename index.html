@@ -14,6 +14,7 @@
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
 	<script src="js/aos.js"></script>
 	<script defer src="js/main.js"></script>
+	<script defer src="js/menu.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -82,9 +83,17 @@
 					<li class="nav__separator" >|</li>
 					<li class="nav__li" id="nav__li6"><a class="nav__lia" id="nav__lia6" href="#Designs">Designs</a></li>
 				</ul>
-				<span class="nav__menu">
+
+				<div class="burger" id="buractive">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<!--<span class="nav__menu">
 					<i class="fa fa-bars" id="nav__menu1"></i>
-				</span>
+				</span>-->
+
 			</nav>
 			<progress class="prueba" id="prueba1" max="100" value="0"></progress>
 		</section>
@@ -94,7 +103,7 @@
 				<div class="about__card">
 					<h2 class="about__hi">Hi 🙋‍♂️, my name is</h2>
 					<h2 class="about__name">Agustín Manelli</h2>
-					<p class="about__title">I dedicate myself to <span class="about__effect" style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"></span><span style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"> design.</span><span class="cursor2">&nbsp</span></p>
+					<p class="about__title">and I dedicate to <span class="about__effect" style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"></span><span style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"> design.</span><span class="cursor2">&nbsp</span></p>
 					<div class="buttons__hero">
 						<a><button class="button cv"><i class="fa-solid fa-file-arrow-down"></i> Curriculum</button></a>
 						<a href="https://www.linkedin.com/in/agustinmanelli/" target="_blank"><button class="button linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
