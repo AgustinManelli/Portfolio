@@ -50,13 +50,19 @@ window.addEventListener("scroll", (event) => {
   let nav__list6 = document.getElementById("nav__li6");
   let nav__ul = document.getElementById("nav__ul1");
   let nav__sandwich = document.getElementById("buractive");
-  
-  console.log(scrollY);
+  let loader = document.querySelector(".prueba");
+  let nav = document.querySelector(".nav__container");
 
   if (scrollY < 150) {
     nav__container.style.boxShadow = "none";
   } else {
     nav__container.style = "none";
+  }
+
+  if (nav.classList.contains("on") ) {
+    loader.classList.toggle("off");
+  }else{
+      loader.classList = ("prueba")
   }
 
   if (scrollY > 700) {

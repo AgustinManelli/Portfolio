@@ -33,17 +33,34 @@
 
 
     /*#################### NAV ####################*/
+    .nav{
+        justify-content: center;
+        gap: 30px;
+    }
+    .prueba.off{
+        opacity: 0;
+        animation-delay: opacity 1s;
+    }
+
     .nav__menu{
         display: initial;
         display: inline-flex ;
     }
+    .nav__logomanelli{
+        margin-left: 0;
+    }
+    .nav__container.on{
+        height: 100vh;
+        overflow: hidden;
+    }
     .nav__ul{
         position: fixed;
+        margin-top: 9vh;
         width: 100vw;
-        height: 100vh;
-        background-color: rgba(39, 38, 38, 1);
-        left: -100vw;
+        height: 91vh;
         top: 0;
+        visibility: hidden;
+        opacity: 0;
         text-align: center;
         transition: .5s;
         flex-direction: column;
@@ -54,8 +71,27 @@
         padding: 0;
         
     }
+    .nav__ul.show{
+        top: 0;
+        left:0px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav__ul2{
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__lia span{
+        display: initial;
+        text-align: left;
+        margin-right: 20px;
+    }
     .burger{
-        display: flex; 
+        display: flex;
+        margin-right: 0; 
     }
     .burger div{
         display: initial;
@@ -78,15 +114,35 @@
     .hero{
         flex-direction: column-reverse;
     }
-    .hero__container{
-        padding-bottom: 40px;
+
+    .hihand{
+        animation: hihand .3s ease-in-out infinite;
     }
+    @keyframes hihand {
+        0% {
+          -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+        }
+        50% {
+          -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+        }
+        100% {
+            -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+        }
+    
+    }
+
     .hero__about{
         margin-right: initial;
         margin-top: 50px;
     }
     .manelli__logohero{
         width: 30vh;
+    }
+    .hero__down{
+        margin-bottom: 40px;
     }
 
     /*############################################*/
@@ -115,10 +171,37 @@
     .letter__down{
         font-size: 1.2rem;
     }
+
+    .sobremi__hands{
+        animation: sobremihand .3s ease-in-out infinite;
+    }
+    @keyframes sobremihand {
+        0% {
+          -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+        }
+        50% {
+          -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+        }
+        100% {
+            -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+        }
+    
+    }
     /*############################################*/
 }
 
 @media only screen and (max-width: 688px) {
+
+
+    .tags2.up{
+        padding: 0;
+    }
+    .tags2.down{
+        padding: 0;
+    }
 
 
     .about__blob{
