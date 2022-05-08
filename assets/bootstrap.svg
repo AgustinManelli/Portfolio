@@ -4,9 +4,9 @@
 	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_00000041253345459446139100000018215908905790861964_);stroke:#FFFFFF;}
+	.st1{fill:url(#SVGID_00000169518096340747718950000007336266947678071741_);stroke:#FFFFFF;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="260.228" y1="795.8892" x2="872.4658" y2="309.8947" gradientTransform="matrix(1 0 0 -1 0 1080)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="260.225" y1="284.1145" x2="872.4628" y2="770.109">
 	<stop  offset="0" style="stop-color:#9013FE"/>
 	<stop  offset="1" style="stop-color:#6610F2"/>
 </linearGradient>
@@ -14,12 +14,12 @@
 	c11.9,38.6,32,63.1,65,66.2V524c-32.9,3.1-53,27.6-65,66.2c-11.9,38.5-13.5,85.8-12.3,122.2c1.3,38-28.3,73-68.2,73H335.2
 	c-40,0-69.6-35-68.2-73c1.3-36.5-0.4-83.7-12.3-122.2c-11.9-38.6-32.1-63.1-65-66.2v-35.6c32.9-3.1,53.1-27.6,65-66.2
 	C266.6,383.7,268.2,336.5,267,300z"/>
-<linearGradient id="SVGID_00000058552714214904704790000008888714310440879504_" gradientUnits="userSpaceOnUse" x1="448.5163" y1="699.2458" x2="585.3677" y2="467.8002" gradientTransform="matrix(1 0 0 -1 0 1080)">
+<linearGradient id="SVGID_00000139979301049433995760000015804843110457362857_" gradientUnits="userSpaceOnUse" x1="448.5293" y1="380.7465" x2="585.3807" y2="612.1921">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#F1E5FC"/>
 </linearGradient>
-<path style="fill:url(#SVGID_00000058552714214904704790000008888714310440879504_);stroke:#FFFFFF;" d="M555.2,654.6
+<path style="fill:url(#SVGID_00000139979301049433995760000015804843110457362857_);stroke:#FFFFFF;" d="M555.2,654.6
 	c64.7,0,103.7-31.7,103.7-84c0-39.5-27.8-68.1-69.1-72.6v-1.6c30.4-4.9,54.2-33.1,54.2-64.6c0-44.9-35.4-74.1-89.4-74.1H433.1v296.9
 	H555.2z M480.4,395.3h62.8c34.2,0,53.5,15.2,53.5,42.8c0,29.4-22.6,45.9-63.5,45.9h-52.9C480.4,484,480.4,395.3,480.4,395.3z
-	 M480.4,617v-97.7h62.4c44.7,0,67.9,16.5,67.9,48.6c0,32.1-22.6,49.2-65.1,49.2H480.4z"/>
+	 M480.4,617v-97.7h62.4c44.7,0,67.9,16.5,67.9,48.6s-22.6,49.2-65.1,49.2L480.4,617L480.4,617z"/>
 </svg>

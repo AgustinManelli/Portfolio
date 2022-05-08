@@ -52,6 +52,7 @@ window.addEventListener("scroll", (event) => {
   let nav__sandwich = document.getElementById("buractive");
   let loader = document.querySelector(".prueba");
   let nav = document.querySelector(".nav__container");
+  let scrollsign = document.getElementById("scrollsign1");
 
   if (scrollY < 150) {
     nav__container.style.boxShadow = "none";
@@ -63,6 +64,13 @@ window.addEventListener("scroll", (event) => {
     loader.classList.toggle("off");
   }else{
       loader.classList = ("prueba")
+  }
+
+  if (scrollY > 300){
+    scrollsign.classList = "scrollsign off";
+  }
+  else{
+    scrollsign.classList = "scrollsign";
   }
 
   if (scrollY > 700) {
@@ -118,11 +126,19 @@ window.onload = function () {
   let nav__list4 = document.getElementById("nav__li4");
   let nav__list5 = document.getElementById("nav__li5");
   let nav__list6 = document.getElementById("nav__li6");
+  let scrollsign = document.getElementById("scrollsign1");
 
   if (scrollY < 150) {
     nav__container.style.boxShadow = "none";
   } else {
     nav__container.style = "none";
+  }
+
+  if (scrollY > 300){
+    scrollsign.classList = "scrollsign off";
+  }
+  else{
+    scrollsign.classList = "scrollsign";
   }
 
   if (scrollY > 700) {
