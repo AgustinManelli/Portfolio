@@ -2,15 +2,35 @@
     .letter__down{
         font-size: .9rem;
     }
+    .about__blob{
+        left: 35vw;
+    }
+    .about__blob2{
+        left: 70vw;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
     .letter__down{
         font-size: .8rem;
     }
+    .about__blob{
+        left: 30vw;
+    }
+    .about__blob2{
+        left: 65vw;
+    }
 }
 
 @media only screen and (max-width: 992px) {
+
+    .about__blob{
+        left: 20vw;
+    }
+    .about__blob2{
+        left: 60vw;
+    }
+
 
     /*#################### NAV ####################*/
     .nav__menu{
@@ -97,6 +117,19 @@
 
 @media only screen and (max-width: 688px) {
 
+
+    .about__blob{
+        left: 0vw;
+        top: 10%;
+        width: 700px;
+        height: 700px;
+    }
+    .about__blob2{
+        left: 60vw;
+        top: -10%;
+    }
+
+
     /*################## HEADER ###################*/
     
     .about__name{
@@ -182,11 +215,34 @@
     .letter__down{
         font-size: .9rem;
     }
+    .about__blob{
+        left: -20vw;
+        top: 10%;
+        width: 700px;
+        height: 700px;
+    }
+    .about__blob2{
+        left: 60vw;
+        top: -10%;
+    }
 }
 
 
 
 @media only screen and (max-width: 585px){
+
+    .about__blob{
+        left: -30vw;
+        top: 10%;
+        width: 700px;
+        height: 700px;
+    }
+    .about__blob2{
+        left: 60vw;
+        top: -10%;
+    }
+
+
     /*################## HEADER ###################*/
 
     .hero{
@@ -218,6 +274,20 @@
 
 
 @media only screen and (max-width: 465px){
+
+    .about__blob{
+        left: -50vw;
+        top: 10%;
+        width: 700px;
+        height: 700px;
+    }
+    .about__blob2{
+        left: 60vw;
+        top: -10%;
+    }
+
+
+
     /*################## HEADER ###################*/
 
     .hero{
@@ -252,6 +322,8 @@
 
 
 @media only screen and (max-width: 420px){
+
+
     .about__hi{
         font-size: 5vw;
     }

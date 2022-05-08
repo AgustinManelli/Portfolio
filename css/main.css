@@ -1,4 +1,5 @@
 /*@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);*/
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 :root{
 	--cprimary:#ff00f2;
@@ -533,33 +534,60 @@ progress::-moz-progress-bar {
     width: 100vw;
 }
 
-/*############################ABOUT#############################################*/   
+/*############################ABOUT#############################################*/
+
+.ABOUTTARGET{
+    position: absolute;
+    max-width: 1200px;
+}
+
+.about__blob{
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    min-width: 5vw;
+    left: 45%;
+    top: -20%;
+    background-image: linear-gradient(45deg, var(--cprimary), var(--cquaternary));
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    z-index: -1;
+}
+.about__blob2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    min-width: 5vw;
+    left: 70%;
+    top: -20%;
+    background-image: linear-gradient(90deg, rgb(128, 0, 255), rgb(255, 0, 183));
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    z-index: -1;
+}
 
 .sobremi__back{
+    position: relative;
     width: 100vw;
     height: 100vh;
     max-height: 1080px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background: linear-gradient(to bottom, var(--csecondary) 0 1%, transparent, transparent);*/
+    overflow: hidden;
 }
 
 .sobremi__container{
-    background: linear-gradient(to bottom, #ffffffd9 0 50%, transparent);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 15px 15px 0px 0px;
-    width: 85%;
+    background-color: rgb(255, 255, 255, 70%);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px) saturate(200%);
+    border-radius: 15px;
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 -20px 20px 0px #00000010;
     z-index: 10;
-
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;*/
+    overflow: visible;
 }
 
 .sobremi__title{
@@ -602,6 +630,7 @@ progress::-moz-progress-bar {
     max-height: 400px;
     overflow: hidden;
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -617,6 +646,7 @@ progress::-moz-progress-bar {
 .person img{
     object-fit: cover;
     width: 27vw;
+    max-width: 400px;
     transform: scale(1.4) translateY(3vw) translateX(-1vw);
     filter: grayscale();
     transition: transform 1s, filter 1s;
@@ -650,9 +680,34 @@ animation: sobremihand .3s ease-in-out infinite;
     }
 
 }
+
+.tags2.up{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(0, 0, 0, 0.12);
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    top:0px;
+    left: 0;
+    user-select: none;
+}
+.tags2.down{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(0, 0, 0, 0.12);
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+}
+.tags2.special{
+    color: rgb(255, 255, 255, 0.03);
+}
 /*##########################################################################*/
 
 .skills{
+    position: relative;
     width: 100vw;
     height: 100vh;
     max-height: 1080px;
@@ -660,15 +715,21 @@ animation: sobremihand .3s ease-in-out infinite;
     justify-content: center;
     align-items: center;
 }
+.skills span{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .skills__container{
-    padding: 30px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 50%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    backdrop-filter: blur(50px) saturate(200%);
     border-radius: 15px;
-    box-shadow: 0 0px 20px 0 #0000001c;
-    text-align: center;
     width: 85%;
     height: 80%;
+    padding: 30px;
+    box-shadow: 0 0px 20px 0 #0000001c;
+    text-align: center;
     max-height: 500px;
     z-index: 10;
     /*display: grid;
@@ -682,6 +743,7 @@ animation: sobremihand .3s ease-in-out infinite;
 
 .skills__title{
     color: var(--csecondary);
+
 }
 
 .skills__boxes{
@@ -750,63 +812,9 @@ animation: sobremihand .3s ease-in-out infinite;
 }
 
 
-
-/*##################### ASSETS #########################*/
-
-.assets{
-    position: absolute;
-    color: var(--csecondary);
-    font-size: 6rem;
-    opacity: .05;
-    z-index: -1;
-}
-.asset1{
-    position: absolute;
-    top: 110vh;
-    left: 90%;
-    transform: rotate(25deg);
-}
-.asset2{
-    position: absolute;
-    top: 170vh;
-    left: 90%;
-    transform: rotate(-25deg);
-}
-.asset3{
-    position: absolute;
-    top: 195vh;
-    left: 30%;
-    transform: rotate(-10deg);
-}
-.asset4{
-    color: #fff;
-    opacity: 1;
-    position: absolute;
-    top: 108vh;
-    left: 10%;
-    transform: rotate(10deg);
-}
-.asset5{
-    opacity: 1;
-    position: absolute;
-    top: 240vh;
-    left: 85%;
-    transform: rotate(0deg);
-}
-.asset6{
-    opacity: 1;
-    position: absolute;
-    top: 270vh;
-    left: 10%;
-    transform: rotate(0deg);
-}
-
-
-/*######################################################*/
-
-
 /*#################### BRANDING ########################*/
 .brand{
+    position: relative;
     height: 100vh;
     max-height: 1080px;
     width: 100vw;
@@ -816,6 +824,11 @@ animation: sobremihand .3s ease-in-out infinite;
     flex-direction: column;
     /*display: grid;
     grid-template-rows: 10% 90%;*/
+    margin-bottom: 100px;
+}
+.brand__tags{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .brand__title{
@@ -823,21 +836,24 @@ animation: sobremihand .3s ease-in-out infinite;
     text-align: center;
     width: 100%;
     margin-top: 3vh;
+    padding-top: 0;
+    padding-bottom: 10px;
 }
 
 .brand__container{
     padding: 10px;
     margin-top: 30px;
-    height: 90%;
-    width: 100%;
+    height: 70%;
+    width: 90%;
     max-height: 700px;
-    background-color: #3b3b3b1c;
+    background-color: #ededed;
     display: grid;
     grid-template-rows: repeat(17, 1fr);
     grid-template-columns: repeat(4, 1fr);
     row-gap: 10px;
     column-gap: 10px;
     border-radius: 15px;
+    z-index: 10;
 }
 
 .brand__color1{
@@ -992,6 +1008,7 @@ animation: sobremihand .3s ease-in-out infinite;
 
 /*################### PROYECTOS ########################*/
 .projects{
+    position: relative;
     height: 100vh;
     max-height: 1080px;
     width: 100vw;
@@ -1001,6 +1018,10 @@ animation: sobremihand .3s ease-in-out infinite;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+}
+.projects span{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .projects__container{
