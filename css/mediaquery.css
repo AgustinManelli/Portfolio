@@ -78,6 +78,9 @@
     .hero{
         flex-direction: column-reverse;
     }
+    .hero__container{
+        padding-bottom: 40px;
+    }
     .hero__about{
         margin-right: initial;
         margin-top: 50px;

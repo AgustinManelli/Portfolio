@@ -71,12 +71,17 @@ body::-webkit-scrollbar-thumb:hover{
     align-items:center;
     flex-direction:column;
     gap:8px;
+    transition: transform .3s;
+    transform: scale(0.7);
+}
+.buractive.active{
+    transform: scale(1);
 }
   
 .burger div{
     display: none;
-    height:5px;
-    width: 44px;
+    height:6px;
+    width: 48px;
     border-radius:3px;
     transition: 0.5s;
 }
