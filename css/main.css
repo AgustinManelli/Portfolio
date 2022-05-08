@@ -219,19 +219,6 @@ main{
     transform: scale(1);
 }
 
-.show.black{
-    top: 0;
-    left:0px;
-    opacity: 1;
-    visibility: visible;
-}
-
-.show.white{
-    top: 0;
-    left:0px;
-    opacity: 1;
-    visibility: visible;
-}
 
 .fa-bars{
     transition: color 1s;
@@ -554,34 +541,6 @@ progress::-moz-progress-bar {
 
 /*############################ABOUT#############################################*/
 
-.ABOUTTARGET{
-    position: absolute;
-    max-width: 1200px;
-}
-
-.about__blob{
-    position: absolute;
-    width: 600px;
-    height: 550px;
-    min-width: 5vw;
-    left: 45%;
-    top: -20%;
-    background-image: linear-gradient(45deg, var(--cprimary), var(--cquaternary));
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    z-index: -1;
-}
-.about__blob2{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    min-width: 5vw;
-    left: 70%;
-    top: -20%;
-    background-image: linear-gradient(90deg, rgb(128, 0, 255), rgb(255, 0, 183));
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    z-index: -1;
-}
-
 .sobremi__back{
     position: relative;
     width: 100vw;
@@ -598,7 +557,7 @@ progress::-moz-progress-bar {
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px) saturate(200%);
     border-radius: 15px;
-    width: 100%;
+    width: 85%;
     padding: 20px;
     display: flex;
     align-items: center;
