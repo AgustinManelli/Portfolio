@@ -525,7 +525,7 @@ progress::-moz-progress-bar {
     transition: background-color .5s, color .4s, transform .4s;
 }
 .button:hover{
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-5deg);
     background-color: var(--cprimary);
     color: #fff;
 }
