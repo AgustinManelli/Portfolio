@@ -120,7 +120,7 @@
         margin-top: 50px;
     }
     .manelli__logohero{
-        width: 30vh;
+        width: 30vw;
     }
     .hero__down{
         margin-bottom: 40px;
@@ -323,16 +323,14 @@
 
 
     /*################## HEADER ###################*/
-
-    .hero{
-        height: 90vh;
+    .manelli__logohero{
+        width: 30vw;
     }
     /*############################################*/
 
     .about__name{
         font-size: 3rem;
     }
-
     .button{
         width: 26vw;
         height: 50px;
@@ -358,6 +356,10 @@
 @media only screen and (max-width: 420px){
 
 
+    .hero{
+        height: 70vh;
+    }
+
     .about__hi{
         font-size: 5vw;
     }
@@ -365,7 +367,7 @@
         font-size: 11vw;
     }
     .about__title{
-        font-size: 5vw;
+        font-size: 4.7vw;
     }
     /*################## SKILLS ###################*/
     .skills{
