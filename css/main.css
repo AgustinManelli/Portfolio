@@ -316,14 +316,14 @@ progress::-moz-progress-bar {
 
 .about__title{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 300;
     text-align: left;
     transition: 1s;
 }
 .about__hi{
     font-family: 'Dancing Script', cursive;
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) translateY(10px);
     font-size: 1.5rem;
     font-weight: 300;
     text-align: left;
@@ -509,10 +509,12 @@ progress::-moz-progress-bar {
 }
 @keyframes d{0%{opacity:1;transform:scale(1) translateY(-.8rem)}6%{opacity:1;transform:scale(.9) translateY(.2rem)}14%{opacity:0;transform:scale(.3) translateY(1.6rem)}15%,19%{opacity:0;transform:scale(.3) translateY(-.8rem)}28%,29.99%{opacity:1;transform:scale(1) translateY(-.8rem)}30%{opacity:1;transform:scale(1) translateY(-.8rem)}36%{opacity:1;transform:scale(.9) translateY(.2rem)}44%{opacity:0;transform:scale(.3) translateY(1.6rem)}45%,49%{opacity:0;transform:scale(.3) translateY(-.8rem)}58%,59.99%{opacity:1;transform:scale(1) translateY(-.8rem)}60%{opacity:1;transform:scale(1) translateY(-.8rem)}66%{opacity:1;transform:scale(.9) translateY(.2rem)}74%{opacity:0;transform:scale(.3) translateY(1.6rem)}75%,79%{opacity:0;transform:scale(.3) translateY(-.8rem)}88%,to{opacity:1;transform:scale(1) translateY(-.8rem)}}@keyframes e{0%{transform:translateY(0)}20%{transform:translateY(.4rem)}30%{transform:translateY(0)}50%{transform:translateY(.4rem)}60%{transform:translateY(0)}80%{transform:translateY(.4rem)}90%{transform:translateY(0)}
 }
+
 .buttons__hero{
     margin-top: 30px;
     width: 100%;
     text-align: left;
+    display: flex;
 }
 
 .button{
@@ -522,12 +524,62 @@ progress::-moz-progress-bar {
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    transition: background-color .5s, color .4s, transform .4s;
+    transition: background-color .5s, color .4s;
 }
 .button:hover{
-    transform: scale(1.1) rotate(-5deg);
     background-color: var(--cprimary);
     color: #fff;
+}
+.buttoncv:hover{
+    animation: wiggle1 ease infinite .3s;
+}
+
+.buttonlinkedin:hover{
+    animation: wiggle2 ease infinite .3s;
+}
+
+.buttongit:hover{
+    animation: wiggle3 ease infinite .3s;
+}
+
+@keyframes wiggle1 {
+    0%{transform: scale(1.1) rotate(-6deg);}
+    10%{transform: scale(1.1) rotate(-7deg);}
+    20%{transform: scale(1.1) rotate(-8deg)}
+    30%{transform: scale(1.1) rotate(-7deg)}
+    40%{transform: scale(1.1) rotate(-6deg)}
+    50%{transform: scale(1.1) rotate(-5deg)}
+    60%{transform: scale(1.1) rotate(-4deg)}
+    70%{transform: scale(1.1) rotate(-3deg)}
+    80%{transform: scale(1.1) rotate(-4deg)}
+    90%{transform: scale(1.1) rotate(-5deg)}
+    100%{transform: scale(1.1) rotate(-6deg)}
+}
+@keyframes wiggle2 {
+    0%{transform: scale(1.1) rotate(-1deg);}
+    10%{transform: scale(1.1) rotate(-2deg);}
+    20%{transform: scale(1.1) rotate(-3deg)}
+    30%{transform: scale(1.1) rotate(-2deg)}
+    40%{transform: scale(1.1) rotate(-1deg)}
+    50%{transform: scale(1.1) rotate(0deg)}
+    60%{transform: scale(1.1) rotate(1deg)}
+    70%{transform: scale(1.1) rotate(2deg)}
+    80%{transform: scale(1.1) rotate(1deg)}
+    90%{transform: scale(1.1) rotate(0deg)}
+    100%{transform: scale(1.1) rotate(-1deg)}
+}
+@keyframes wiggle3 {
+    0%{transform: scale(1.1) rotate(4deg);}
+    10%{transform: scale(1.1) rotate(3deg);}
+    20%{transform: scale(1.1) rotate(2deg)}
+    30%{transform: scale(1.1) rotate(3deg)}
+    40%{transform: scale(1.1) rotate(4deg)}
+    50%{transform: scale(1.1) rotate(5deg)}
+    60%{transform: scale(1.1) rotate(6deg)}
+    70%{transform: scale(1.1) rotate(7deg)}
+    80%{transform: scale(1.1) rotate(6deg)}
+    90%{transform: scale(1.1) rotate(5deg)}
+    100%{transform: scale(1.1) rotate(4deg)}
 }
 
 /*#############################################################*/

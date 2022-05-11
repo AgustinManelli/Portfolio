@@ -16,6 +16,7 @@
 	<script defer src="js/main.js"></script>
 	<script defer src="js/menu.js"></script>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/buttons.css">
 	<link rel="stylesheet" href="css/mediaquery.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -94,10 +95,6 @@
 					<div class="burger__bread"></div>
 				</div>
 
-				<!--<span class="nav__menu">
-					<i class="fa fa-bars" id="nav__menu1"></i>
-				</span>-->
-
 			</nav>
 			<progress class="prueba" id="prueba1" max="100" value="0"></progress>
 		</section>
@@ -111,9 +108,54 @@
 					<!--<h2 class="about__name">Agustín Manelli</h2>-->
 					<p class="about__title">I dedicate myself to <span class="about__effect" style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"></span><span style="color: var(--cprimary);font-weight: 800; font-family: 'ubuntu', sans-serif;"> design.</span><span class="cursor2">&nbsp</span></p>
 					<div class="buttons__hero">
-						<a><button class="button cv"><i class="fa-solid fa-file-arrow-down"></i> CV</button></a>
-						<a href="https://www.linkedin.com/in/agustinmanelli/" target="_blank"><button class="button linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
-						<a><button class="button github"><i class="fa-brands fa-github"></i> Github</button></a>
+						<!--<a><button class="button cv buttoncv"><i class="fa-solid fa-file-arrow-down"></i> CV</button></a>
+						<a href="https://www.linkedin.com/in/agustinmanelli/" target="_blank"><button class="button linkedin buttonlinkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+						<a><button class="button github buttongit"><i class="fa-brands fa-github"></i> Github</button></a>-->
+						<a href="https://www.linkedin.com/in/agustinmanelli/" target="_blank">
+							<div class="BotonHeader">
+								<img class="BotonHeader__asset" src="assets/button/asset.svg" alt="">
+								<div class="background__botoncontainer">
+									<div class="BotonHeader__background"><i class="fa-brands fa-linkedin iconobutton__header"></i><p>Linkedin</p></div>
+								</div>
+							
+								<div class="stroke__botoncontainer">
+									<div class="BotonHeader__stroke"></div>
+								</div>
+								<div class="ball uno"></div>
+								<div class="ball dos"></div>
+								<div class="ball tres"></div>
+							</div>
+						</a>
+						<a href="https://github.com/AgustinManelli" target="_blank">
+							<div class="BotonHeader">
+								<img class="BotonHeader__asset" src="assets/button/asset.svg" alt="">
+								<div class="background__botoncontainer">
+									<div class="BotonHeader__background"><i class="fa-brands fa-github iconobutton__header"></i><p>Github</p></div>
+								</div>
+							
+								<div class="stroke__botoncontainer">
+									<div class="BotonHeader__stroke"></div>
+								</div>
+								<div class="ball uno"></div>
+								<div class="ball dos"></div>
+								<div class="ball tres"></div>
+							</div>
+						</a>
+						<a>
+							<div class="BotonHeader">
+								<img class="BotonHeader__asset" src="assets/button/asset.svg" alt="">
+								<div class="background__botoncontainer">
+									<div class="BotonHeader__background"><i class="fa-solid fa-file-arrow-down iconobutton__header"></i><p>CV</p></div>
+								</div>
+							
+								<div class="stroke__botoncontainer">
+									<div class="BotonHeader__stroke"></div>
+								</div>
+								<div class="ball uno"></div>
+								<div class="ball dos"></div>
+								<div class="ball tres"></div>
+							</div>
+						</a>	
 					</div>
 					<span class="tags down">&#60 section &#62</span>
 				</div>

@@ -1,0 +1,248 @@
+.logobutton__back{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttons__hero{
+    margin-top: 30px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 30px;
+}
+.buttons__hero a{
+  text-decoration: none;
+  color: #fff;
+}
+.BotonHeader{
+    position: relative;
+    cursor: pointer;
+    width: 130px;
+    height: 35px;
+}
+.stroke__botoncontainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform .5s;
+}
+.background__botoncontainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s;
+    transform: translateX(5px);
+}
+.BotonHeader__stroke{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+.BotonHeader__background{
+    position: relative;
+    background-color: #ff00f2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.BotonHeader__background p{
+  font-weight: 600;
+}
+.BotonHeader__asset{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0%;
+    width: 50%;
+    top: -45%;
+    right: -10%;
+    transition: .5s;
+    animation: rot linear infinite 5s;
+}
+.BotonHeader:hover .background__botoncontainer{
+    transform: rotate(-7deg);
+}
+.BotonHeader:hover .BotonHeader__background{
+  animation: shake linear infinite 20s;
+  animation-delay: .5s;
+}
+.BotonHeader:hover .BotonHeader__stroke{
+    animation: shake linear infinite 20s;
+}
+.BotonHeader:hover .stroke__botoncontainer{
+    transform: rotate(-4deg);
+}
+.BotonHeader:hover .iconobutton__header{
+  color: #272626; 
+}
+.BotonHeader:hover p{
+  color: #272626; 
+}
+
+.ball{
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.uno{
+    width: 20px;
+    height: 20px;
+    bottom:-15%;
+    left: 0%;
+    animation: shake linear infinite 20s;
+    animation-delay: 1s;
+}
+.dos{
+    width: 10px;
+    height: 10px;
+    bottom: 20%;
+    left: -5%;
+    animation: shake linear infinite 20s;
+    animation-delay: 2s;
+}
+.tres{
+    width: 15px;
+    height: 15px;
+    bottom:-10%;
+    left: -15%;
+    transition-delay: .3s;
+    animation: shake linear infinite 20s;
+    animation-delay: 3s;
+}
+.BotonHeader:hover .ball{
+    opacity: 100%;
+    visibility: visible;
+}
+.BotonHeader:hover .BotonHeader__asset{
+    opacity: 100%;
+    visibility: visible;
+}
+
+@keyframes rot{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    2% {
+      transform: translate(-0.5px, 2.5px) rotate(-0.5deg); }
+    4% {
+      transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+    6% {
+      transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+    8% {
+      transform: translate(0.5px, 2.5px) rotate(-0.5deg); }
+    10% {
+      transform: translate(-1.5px, 2.5px) rotate(1.5deg); }
+    12% {
+      transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+    14% {
+      transform: translate(2.5px, 2.5px) rotate(1.5deg); }
+    16% {
+      transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+    18% {
+      transform: translate(0.5px, 2.5px) rotate(1.5deg); }
+    20% {
+      transform: translate(1.5px, -1.5px) rotate(-0.5deg); }
+    22% {
+      transform: translate(0.5px, 1.5px) rotate(1.5deg); }
+    24% {
+      transform: translate(-0.5px, 1.5px) rotate(0.5deg); }
+    26% {
+      transform: translate(-1.5px, -1.5px) rotate(0.5deg); }
+    28% {
+      transform: translate(1.5px, 2.5px) rotate(1.5deg); }
+    30% {
+      transform: translate(2.5px, -1.5px) rotate(1.5deg); }
+    32% {
+      transform: translate(1.5px, 1.5px) rotate(1.5deg); }
+    34% {
+      transform: translate(2.5px, 0.5px) rotate(-0.5deg); }
+    36% {
+      transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+    38% {
+      transform: translate(0.5px, 0.5px) rotate(0.5deg); }
+    40% {
+      transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+    42% {
+      transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+    44% {
+      transform: translate(-0.5px, -0.5px) rotate(-0.5deg); }
+    46% {
+      transform: translate(1.5px, 2.5px) rotate(-0.5deg); }
+    48% {
+      transform: translate(2.5px, 2.5px) rotate(1.5deg); }
+    50% {
+      transform: translate(0.5px, 2.5px) rotate(1.5deg); }
+    52% {
+      transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+    54% {
+      transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+    56% {
+      transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+    58% {
+      transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+    60% {
+      transform: translate(-0.5px, 0.5px) rotate(-0.5deg); }
+    62% {
+      transform: translate(2.5px, -1.5px) rotate(1.5deg); }
+    64% {
+      transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+    66% {
+      transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+    68% {
+      transform: translate(-1.5px, -0.5px) rotate(0.5deg); }
+    70% {
+      transform: translate(2.5px, 0.5px) rotate(-0.5deg); }
+    72% {
+      transform: translate(1.5px, 0.5px) rotate(1.5deg); }
+    74% {
+      transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+    76% {
+      transform: translate(-1.5px, -0.5px) rotate(0.5deg); }
+    78% {
+      transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+    80% {
+      transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+    82% {
+      transform: translate(-0.5px, 1.5px) rotate(1.5deg); }
+    84% {
+      transform: translate(-1.5px, 2.5px) rotate(-0.5deg); }
+    86% {
+      transform: translate(-1.5px, -0.5px) rotate(-0.5deg); }
+    88% {
+      transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+    90% {
+      transform: translate(2.5px, -1.5px) rotate(-0.5deg); }
+    92% {
+      transform: translate(2.5px, 0.5px) rotate(-0.5deg); }
+    94% {
+      transform: translate(0.5px, 1.5px) rotate(-0.5deg); }
+    96% {
+      transform: translate(1.5px, 2.5px) rotate(0.5deg); }
+    98% {
+      transform: translate(2.5px, -0.5px) rotate(1.5deg); }
+    0%, 100% {
+      transform: translate(0, 0) rotate(0); } 
+}

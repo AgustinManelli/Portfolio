@@ -326,6 +326,13 @@
     .manelli__logohero{
         width: 30vw;
     }
+    .buttons__hero{
+        gap: 15px;
+    }
+    .BotonHeader{
+        width: 120px;
+        height: 50px;
+    }
     /*############################################*/
 
     .about__name{
