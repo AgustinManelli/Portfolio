@@ -670,38 +670,76 @@ progress::-moz-progress-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
+}
+
+.sobremi__base{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle1{
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    width: 600px;
+    height: 500px;
+    background-image: linear-gradient(0deg, var(--cprimary), var(--cquaternary));
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    animation: shake 60s linear infinite;
+}
+.circle2{
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(90deg, rgb(255, 0, 255), var(--ctertiary));
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    animation: shake 30s linear infinite;
+}
+
+.sobremi__assets{
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: -100px;
+    animation: rot 20s linear infinite;
 }
 
 .sobremi__container{
+    position: relative;
     background-color: rgb(255, 255, 255, 70%);
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
     backdrop-filter: blur(50px) saturate(200%);
     border-radius: 15px;
-    width: 85%;
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     box-shadow: 0 -20px 20px 0px #00000010;
-    z-index: 10;
     overflow: visible;
 }
 
-.sobremi__title{
-    text-align: center;
-    width: 50%;
+.titulos{
+    position: relative;
+    text-align: left;
     color: var(--csecondary);
     font-size: 3rem;
-    border-bottom: 5px solid #ff00f2; 
+    border-bottom: 5px solid var(--cprimary);
     font-variation-settings: "wght" 600; 
     transition: 1s;
+    display: inline-block;
 }
-.sobremi__title:hover{
+
+.titulos:hover{
     font-variation-settings: "wght" 800;
 }
 
-.sobremi__paragraph{
+.paragraph{
     color: var(--csecondary);
     padding-top: 20px;
     font-weight: 500;
@@ -714,7 +752,18 @@ progress::-moz-progress-bar {
     text-align: center;
     width: 100%;
     height: 100%;
-    margin-right: 50px;
+}
+
+.sobremi__image::after{
+    content: "";
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    max-width: 400px;
+    max-height: 400px;
+    border-bottom: 5px solid var(--cquaternary);
+    border-radius: 50%;
+    animation: rot 10s linear infinite;
 }
 
 .person{
@@ -785,9 +834,10 @@ animation: sobremihand .3s ease-in-out infinite;
     font-size: 2rem;
     font-weight: 300;
     position: absolute;
-    top:0px;
+    top:-10%;
     left: 0;
     user-select: none;
+
 }
 .tags2.down{
     font-family: 'Dancing Script', cursive;
@@ -795,7 +845,7 @@ animation: sobremihand .3s ease-in-out infinite;
     font-size: 2rem;
     font-weight: 300;
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
     left: 0;
     user-select: none;
 }
@@ -812,49 +862,58 @@ animation: sobremihand .3s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.skills span{
-    padding-top: 0;
-    padding-bottom: 0;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--csecondary);
 }
 
+
 .skills__container{
-    background-color: rgb(255, 255, 255, 50%);
-    -webkit-backdrop-filter: blur(50px) saturate(200%);
-    backdrop-filter: blur(50px) saturate(200%);
+    position: relative;
+    background-color: var(--cprimary);
     border-radius: 15px;
-    width: 85%;
-    height: 80%;
-    padding: 30px;
+    width: 80%;
+    padding: 50px;
     box-shadow: 0 0px 20px 0 #0000001c;
     text-align: center;
     max-height: 500px;
     z-index: 10;
-    /*display: grid;
-    grid-template-rows: 20% 80%;*/
+    overflow: visible;
+}
+.skills__container::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transform: translateX(-10px);
+    animation: shake 60s linear infinite;
 }
 
-.skills__title1{
-    width: initial;
-    margin-top: 0;
+.svgtitle{
+    width: 50%;
 }
 
 .skills__title{
-    color: var(--csecondary);
-
+    color: #fff;
+    display: inline-block;
+    border-bottom: 3px solid #fff;
 }
 
 .skills__boxes{
     width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;*/
 }
 
 .skills__dev{
@@ -863,57 +922,61 @@ animation: sobremihand .3s ease-in-out infinite;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*display: grid;
-    grid-template-rows: 10% 90%;*/
+    gap: 20px;
 }
 
 .dev__logoscontainer{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    row-gap: 30px;
+    column-gap: 15px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    /*display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 15px;*/
-    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
 }
 .dev__logoscontainer img{
-    width: 80px;
+    width: 5vw;
+    min-width: 60px;
+    max-width: 80px;
     border-radius: 15px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
     transition: transform .3s;
+    background-color: rgb(255, 255, 255, 1);
 }
 .dev__logoscontainer img:hover{
     transform: scale(1.1);
 }
 
+.skiillslogos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .letter__down{
-    color: var(--csecondary);
+    color: #fff;
     font-family: "Ubuntu";
     font-weight: 500;
     transform: scale(0);
     transition: transform .2s;
     font-size: 1.1rem;
-    position: relative;
+    position: absolute;
+    bottom: -30%;
 }
 
 .skiillslogos:hover .letter__down{
     transform: scale(1);
 }
+
 .skills__design{
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*display: grid;
-    grid-template-rows: 10% 90%;*/
+    gap: 20px;
 }
 
 
@@ -948,8 +1011,7 @@ animation: sobremihand .3s ease-in-out infinite;
 .brand__container{
     padding: 10px;
     margin-top: 30px;
-    height: 70%;
-    width: 90%;
+    width: 80%;
     max-height: 700px;
     background-color: #ededed;
     display: grid;

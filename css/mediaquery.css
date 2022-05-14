@@ -128,55 +128,40 @@
 
     /*############################################*/
 
+    /*################## ABOUT ###################*/
 
-    /*################## SKILLS #################*/
-    .skills{
-        height: 200vh;
+    .sobremi__base{
+        width: 95%;
     }
-    .skills__container{
-        max-height: 1920px;
-    }
-
-    .skills__boxes{
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .skills__dev{
-        margin-top: 50px;
-        margin-right: 0;
-    }
-    .skills__design{
-        margin-top: 50px;
-        margin-left: 0;
-    }
-    .letter__down{
-        font-size: 1.2rem;
+    .sobremi__assets{
+        visibility: hidden;
+        display: none;
     }
 
     .sobremi__hands{
         animation: sobremihand .3s ease-in-out infinite;
     }
-    @keyframes sobremihand {
-        0% {
-          -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-        }
-        50% {
-          -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-        }
-        100% {
-            -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-        }
-    
+
+    /*############################################*/
+
+
+    /*################## SKILLS #################*/
+    .skills__container{
+        width: 95%;
+        max-height: 1000px;
+    }
+    .skills__boxes{
+        flex-direction: column;
     }
     /*############################################*/
-}
 
+    /*################## BRANDING ################*/
 
+    .brand__container{
+        width: 95%;
+    }
 
-@media only screen and (max-width: 688px){
+    /*############################################*/
 
 }
 
@@ -208,6 +193,13 @@
 
     /*################# SOBRE MI #################*/
 
+    .sobremi__assets{
+        top: initial;
+        bottom: -100px;
+        left: -200px;
+        width: 700px;
+    }
+
     .sobremi__back{
         margin-top: 70px;
     }
@@ -217,6 +209,10 @@
     .sobremi__image{
         margin-right: initial;
         margin-bottom: 30px;
+    }
+    .sobremi__image::after{
+        width: 40vw;
+        height: 40vw;
     }
     .person{
         width: 40vw;
@@ -232,8 +228,8 @@
     /*############################################*/
 
     /*################## SKILLS #################*/
-    .letter__down{
-        font-size: 1rem;
+    .skills{
+        height: 100vh;
     }
     /*############################################*/
 
@@ -297,24 +293,35 @@
 
     /*############################################*/
 
-    /*################## SKILLS ###################*/
+    /*################## ABOUT ####################*/
 
-    .sobremi__title{
-        font-size: 2rem;
-    }
-
-    .dev__logoscontainer{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .skills__boxes{
-        margin-top: 100px;
-    }
-    .letter__down{
-        font-size: 1rem;
+    .circle2{
+        width: 350px;
+        height: 350px;
     }
 
     /*############################################*/
+
+    /*################## SKILLS ###################*/
+
+    .svgtitle{
+        width: 90%;
+    }
+
+    /*############################################*/
+}
+
+@media only screen and (max-width: 520px){
+
+    /*################## ABOUT ####################*/
+
+    .circle2{
+        right: initial;
+        left: -50px;
+    }
+
+    /*############################################*/
+
 }
 
 
@@ -335,6 +342,14 @@
     }
     /*############################################*/
 
+
+    /*################## ABOUT ####################*/
+
+    .circle1{
+        width: 400px;
+        height: 500px;
+        right: -5%;
+    }
     .about__name{
         font-size: 3rem;
     }
@@ -350,6 +365,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    /*############################################*/
 
     /*################## SKILLS ###################*/
     .letter__down{
@@ -377,20 +394,6 @@
         font-size: 4.7vw;
     }
     /*################## SKILLS ###################*/
-    .skills{
-        max-height: 1800px;
-        height: 1800px;
-    }
-    .dev__logoscontainer{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .skills__logocontainer{
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .letter__down{
-        font-size: 1.5rem;
-    }
     /*############################################*/
 }
 
