@@ -272,9 +272,6 @@ progress::-moz-progress-bar {
     width: 100vw;
     height: 80vh;
     max-width: 1200px;
-    min-height: 530px;
-    /*display:grid;
-    grid-template-columns: 60% 40%;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -668,7 +665,6 @@ progress::-moz-progress-bar {
     width: 100vw;
     height: 100vh;
     max-height: 1080px;
-    min-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -861,7 +857,6 @@ animation: sobremihand .3s ease-in-out infinite;
     width: 100vw;
     height: 100vh;
     max-height: 1080px;
-    min-height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;

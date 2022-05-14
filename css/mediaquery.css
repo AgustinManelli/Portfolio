@@ -431,6 +431,15 @@
 }
 
 @media only screen and (max-width: 380px){
+    .hero{
+        min-height: 530px;
+    }
+    .sobremi__back{
+        min-height: 1000px;
+    }
+    .skills{
+        min-height: 1000px;
+    }
     .sobremi__title{
         font-size: 1.5rem;
     }
