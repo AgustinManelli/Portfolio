@@ -66,7 +66,7 @@ window.addEventListener("scroll", (event) => {
       loader.classList = ("prueba")
   }
 
-  if (scrollY > 300){
+  if (scrollY > 500){
     scrollsign.classList = "scrollsign off";
   }
   else{
@@ -134,7 +134,7 @@ window.onload = function () {
     nav__container.style = "none";
   }
 
-  if (scrollY > 300){
+  if (scrollY > 500){
     scrollsign.classList = "scrollsign off";
   }
   else{
