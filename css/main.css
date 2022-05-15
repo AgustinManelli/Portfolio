@@ -36,6 +36,8 @@ body::-webkit-scrollbar-thumb:hover{
 *::selection{
 	background: #ffddfd;
 	color: var(--csecondary);
+    margin: 0;
+    padding: 0;
 }
 main{
     overflow-x: hidden;
@@ -73,6 +75,7 @@ main{
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    -webkit-gap:8px;
     gap:8px;
     transition: transform .3s;
     transform: scale(0.7);
