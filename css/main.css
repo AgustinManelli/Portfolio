@@ -132,8 +132,8 @@ main{
 }
 
 .nav__container{
-    backdrop-filter: saturate(200%) blur(10px);
-    -webkit-backdrop-filter: saturate(200%) blur(10px);
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
     height: 69px;
     background-color: rgba(39, 38, 38, 0.8);
     position: fixed;
