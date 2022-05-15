@@ -226,7 +226,7 @@
         margin-right: initial;
         margin-bottom: 30px;
     }
-    .sobremi__image::after{
+    .sobremi__image::before{
         width: 40vw;
         height: 40vw;
     }
@@ -343,6 +343,9 @@
     .circle2{
         right: initial;
         left: -50px;
+    }
+    .person img{
+        filter: none;
     }
 
     /*############################################*/

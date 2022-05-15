@@ -582,76 +582,6 @@ progress::-moz-progress-bar {
 
 /*#############################################################*/
 
-
-/*#################BOTON HEADER################################*/
-/*.cssbuttons-io {
-    position: relative;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    border-radius: 0.9em;
-    border: none;
-    background: linear-gradient(to right, var(--cprimary), var(--cquaternary));
-    color: ghostwhite;
-    overflow: hidden;
-    cursor: pointer;
-}
-.cssbuttons-io a{
-    color: #fff;
-    text-decoration: none;
-}
-
-   
-.cssbuttons-io svg {
-    width: 1.2em;
-    height: 1.2em;
-    margin-right: 0.5em;
-}
-   
-.cssbuttons-io span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
-    font-variation-settings: "wght" 300; 
-    transition: 1s;
-}
-.cssbuttons-io span:hover{
-    font-variation-settings: "wght" 800; 
-}
-   
-.cssbuttons-io::before,
-.cssbuttons-io::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-   
-.cssbuttons-io::before {
-    content: "";
-    background: #000;
-    width: 130%;
-    height: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-   
-.cssbuttons-io:hover::before {
-    transform: translate3d(100%, 0, 0);
-}
-   
-.cssbuttons-io:active {
-    transform: scale(0.95);
-}*/
-/*##############################################################################*/
-
 .line__path{
     position: absolute;
     z-index: -1;
@@ -752,7 +682,7 @@ progress::-moz-progress-bar {
     height: 100%;
 }
 
-.sobremi__image::after{
+.sobremi__image::before{
     content: "";
     position: absolute;
     width: 25vw;
