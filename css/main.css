@@ -14,6 +14,7 @@ body{
     /*cursor: url(../assets/dot.png), auto;*/
     scroll-behavior: smooth;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%
 }
 
 body::-webkit-scrollbar{
