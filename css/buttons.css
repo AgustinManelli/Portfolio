@@ -23,11 +23,6 @@
     cursor: pointer;
     width: 130px;
     height: 35px;
-    @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-      &:not(:last-child) {
-        margin-right: 5%;
-      }
-    }
 }
 .stroke__botoncontainer{
     position: absolute;

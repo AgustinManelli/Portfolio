@@ -78,9 +78,7 @@ main{
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    gap:8px;
-    -webkit-gap:8px;
-    @supports(-webkit-gap: 8px);
+    gap: 8px;
     transition: transform .3s;
     transition: transform .3s;
     transform: scale(0.7);
@@ -871,8 +869,6 @@ animation: sobremihand .3s ease-in-out infinite;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
 }
 .dev__logoscontainer img{
     width: 5vw;
