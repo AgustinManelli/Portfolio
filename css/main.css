@@ -80,6 +80,7 @@ main{
     flex-direction:column;
     gap:8px;
     -webkit-gap:8px;
+    @supports(-webkit-gap: 8px);
     transition: transform .3s;
     transition: transform .3s;
     transform: scale(0.7);
