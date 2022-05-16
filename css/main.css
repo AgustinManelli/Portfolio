@@ -320,6 +320,10 @@ progress::-moz-progress-bar {
     align-items: left;
 }
 
+.about__agustin{
+    width: 100%;
+}
+
 .about__title{
     color: #fff;
     font-size: 1.4rem;
@@ -334,6 +338,7 @@ progress::-moz-progress-bar {
     font-weight: 300;
     text-align: left;
 }
+
 .about__hihand{
 
     display: inline-block;
@@ -621,19 +626,13 @@ progress::-moz-progress-bar {
     top: -50px;
     width: 600px;
     height: 500px;
-    background-image: linear-gradient(0deg, var(--cprimary), var(--cquaternary));
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    animation: shake 60s linear infinite;
 }
 .circle2{
     position: absolute;
     right: 200px;
     bottom: -50px;
-    width: 300px;
-    height: 300px;
-    background-image: linear-gradient(90deg, rgb(255, 0, 255), var(--ctertiary));
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    animation: shake 30s linear infinite;
+    width: 500px;
+    height: 400px;
 }
 
 .sobremi__assets{
