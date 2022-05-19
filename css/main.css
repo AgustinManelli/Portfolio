@@ -7,12 +7,13 @@
     --ctertiary: #FF4779;
     --cquaternary: #FF8D00;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
 	font-family: 'Raleway', sans-serif;
 	animation: linear fadein .5s;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    /*cursor: url(../assets/dot.png), auto;*/
-    scroll-behavior: smooth;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%
 }
