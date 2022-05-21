@@ -926,7 +926,6 @@ animation: sobremihand .3s ease-in-out infinite;
     flex-direction: column;
     /*display: grid;
     grid-template-rows: 10% 90%;*/
-    margin-bottom: 100px;
 }
 .brand__tags{
     padding-top: 0;
@@ -1257,6 +1256,7 @@ animation: sobremihand .3s ease-in-out infinite;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .design__title{

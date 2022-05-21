@@ -86,12 +86,12 @@
 .BotonHeader:hover .stroke__botoncontainer{
     transform: rotate(-4deg);
 }
-.BotonHeader:hover .iconobutton__header{
-  color: #272626; 
+/*.BotonHeader:hover .iconobutton__header{
+  color: #FF8D00; 
 }
 .BotonHeader:hover p{
-  color: #272626; 
-}
+  color: #FF8D00; 
+}*/
 
 .ball{
     background-color: #fff;
