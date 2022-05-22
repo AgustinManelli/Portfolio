@@ -889,6 +889,22 @@ animation: sobremihand .3s ease-in-out infinite;
     justify-content: center;
 }
 
+.skills__progressbar{
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    background-color: #fff;
+    fill: var(--cquaternary);
+    border-radius: 15px;
+    outline: 2px solid #fff;
+    opacity: 0;
+    transition: opacity .5s;
+    animation: shake 120s infinite ease-in-out;
+}
+.skiillslogos:hover .skills__progressbar{
+    opacity: 100%;
+}
+
 .letter__down{
     color: #fff;
     font-family: "Ubuntu";
@@ -897,7 +913,7 @@ animation: sobremihand .3s ease-in-out infinite;
     transition: transform .2s;
     font-size: 1.1rem;
     position: absolute;
-    bottom: -30%;
+    bottom: -35%;
 }
 
 .skiillslogos:hover .letter__down{
