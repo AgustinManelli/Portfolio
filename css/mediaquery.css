@@ -45,10 +45,10 @@
         text-align: center;
         transition: .5s;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         z-index: 20;
         margin-right: 0;
+        margin-top: 15vh;
         padding: 0;
         
     }
@@ -274,7 +274,12 @@
 
 
     /*################# DISEÑOS #################*/
+    .design{
+        padding: 0;
+    }
     .design__container{
+        width: 90%;
+        height: 80%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
@@ -417,7 +422,7 @@
 
 
     .hero{
-        height: 70vh;
+        height: 75vh;
     }
 
     .about__hi{
